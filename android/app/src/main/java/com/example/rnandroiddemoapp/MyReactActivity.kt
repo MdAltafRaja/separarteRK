@@ -27,6 +27,7 @@ class MyReactActivity : Activity(), DefaultHardwareBackBtnHandler {
             .setBundleAssetName("index.android.bundle")
             .setJSMainModulePath("index")
             .addPackage(MainReactPackage())
+            .addPackage(TestConnectNativePackage())
             .setUseDeveloperSupport(BuildConfig.DEBUG)
             .setInitialLifecycleState(LifecycleState.RESUMED)
             .build()
