@@ -12,13 +12,13 @@ import com.example.rnandroiddemoapp.databinding.ActivitySecondBinding
 class SecondActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
-private lateinit var binding: ActivitySecondBinding
+    private lateinit var binding: ActivitySecondBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-     binding = ActivitySecondBinding.inflate(layoutInflater)
-     setContentView(binding.root)
+        binding = ActivitySecondBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
 
