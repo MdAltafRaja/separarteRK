@@ -2,6 +2,8 @@ package com.example.rnandroiddemoapp
 
 import android.app.Activity
 import android.os.Bundle
+import com.example.rnandroiddemoapp.BuildConfig
+import com.example.rnandroiddemoapp.TestConnectNativePackage
 import com.facebook.react.ReactInstanceManager
 import com.facebook.react.ReactRootView
 import com.facebook.react.common.LifecycleState

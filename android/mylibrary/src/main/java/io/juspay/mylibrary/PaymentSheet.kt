@@ -1,13 +1,13 @@
-package io.juspay.orca.paymentsheet.example
+package io.juspay.mylibrary
 
+import android.app.Activity
 import android.content.Intent
 import androidx.activity.ComponentActivity
-import com.example.rnandroiddemoapp.MyReactActivity
 
 class PaymentSheet(private val activity: ComponentActivity) {
 
-    fun presentWithPaymentIntent(clientSecret: String, configuration: Any) {
-        var intent = Intent( activity, MyReactActivity::class.java)
+    fun presentWithPaymentIntent(clientSecret: String, configuration: Any, myReactActivity: Class<*>?) {
+        var intent = Intent( activity, myReactActivity)
         intent.putExtra("clientSecret", clientSecret)
         activity.startActivity(intent)
     }
